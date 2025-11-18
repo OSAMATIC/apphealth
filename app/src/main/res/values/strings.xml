@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">health_prototip</string>
+    <string name="logo_health_prototip">Health app</string>
+    <string name="btn_iniciar_sesion_mainActivity">Iniciar sesión</string>
+    <string name="linko_continuar_como_invitado_mainActivity">  o     Continuar como invitado</string>
+    <string name="link_registrarse_mainActivity">Registrarse</string>
+</resources>
