@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Health_prototip">
         <activity
+            android:name=".PaginaPrincipal_loby"
+            android:exported="false" />
+        <activity
             android:name=".registreActivity"
             android:exported="false" />
         <activity

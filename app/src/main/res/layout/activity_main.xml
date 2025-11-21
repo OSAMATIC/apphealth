@@ -17,6 +17,32 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="150dp"/>
+    <EditText
+        android:id="@+id/nomLoginSesio"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/nom"
+        android:inputType="text"
+        app:layout_constraintTop_toBottomOf="@+id/img_logo_view_principal_health"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginTop="10dp"
+        />
+    <EditText
+        android:id="@+id/ContraseñaLoginSesio"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/Contrasenya"
+        android:inputType="text"
+        app:layout_constraintTop_toBottomOf="@+id/nomLoginSesio"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginTop="10dp"
+        />
 
     <Button
         android:id="@+id/btn_iniciar_sesion"
@@ -36,15 +62,17 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
+        android:focusable="true"
         android:text="@string/link_registrarse_mainActivity"
         android:gravity="right"
         android:textColor="@android:color/holo_blue_dark"
         android:textSize="16sp"
         android:textStyle="bold"
-
         app:layout_constraintEnd_toStartOf="@id/txt_invitado"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/btn_iniciar_sesion" />
+        app:layout_constraintTop_toBottomOf="@id/btn_iniciar_sesion"
+        android:clickable="true"
+        />
 
     <TextView
         android:id="@+id/txt_invitado"
@@ -58,7 +86,7 @@
         app:layout_constraintTop_toBottomOf="@id/btn_iniciar_sesion"
         app:layout_constraintStart_toEndOf="@id/txt_registrarse"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginEnd="74dp"
+        android:layout_marginEnd="70dp"
         android:layout_marginStart="10dp"/>
 
 

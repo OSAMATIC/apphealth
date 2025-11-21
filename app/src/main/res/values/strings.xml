@@ -4,4 +4,9 @@
     <string name="btn_iniciar_sesion_mainActivity">Iniciar sesión</string>
     <string name="linko_continuar_como_invitado_mainActivity">  o     Continuar como invitado</string>
     <string name="link_registrarse_mainActivity">Registrarse</string>
+    <string name="nom">Nom</string>
+    <string name="Contrasenya">Contrasenya\n</string>
+    <string name="btn_registrarse">btn_registrarse</string>
+    <string name="Registrarse">Registrarse\n</string>
+    <string name="cognom">Cognom</string>
 </resources>
