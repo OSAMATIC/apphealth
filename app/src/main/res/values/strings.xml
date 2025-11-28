@@ -5,8 +5,13 @@
     <string name="linko_continuar_como_invitado_mainActivity">  o     Continuar como invitado</string>
     <string name="link_registrarse_mainActivity">Registrarse</string>
     <string name="nom">Nom</string>
-    <string name="Contrasenya">Contrasenya\n</string>
+    <string name="Contrasenya">Contrasenya</string>
     <string name="btn_registrarse">btn_registrarse</string>
     <string name="Registrarse">Registrarse\n</string>
     <string name="cognom">Cognom</string>
+    <string name="registrarse">Registrarse</string>
+    <string name="Email">Email</string>
+    <string name="Verifica_Email">Confirma Email</string>
+    <string name="txtContrasenyaRegistre">Contrasenya</string>
+    <string name="txtRepeteixContrasenyaRegistre">Confirma Contrasenya</string>
 </resources>

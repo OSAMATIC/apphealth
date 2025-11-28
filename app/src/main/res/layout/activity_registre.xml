@@ -6,19 +6,20 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".registreActivity">
+
+
     <TextView
         android:id="@+id/banner_txt_registrarse"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Registrarse"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:text="@string/registrarse"
         android:textSize="32sp"
         android:textStyle="bold"
-        android:gravity="center"
-        android:layout_marginTop="40dp"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/txt_nomRegistre"
@@ -47,16 +48,69 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         />
+    <EditText
+        android:id="@+id/txtCorreuRegistre"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/Email"
+        android:inputType="text"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/txt_CognomRegistre"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+    <EditText
+        android:id="@+id/txtRepeteixCorreu"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/Verifica_Email"
+        android:inputType="text"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/txtCorreuRegistre"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+    <EditText
+        android:id="@+id/txtContrasenyaRegistre"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/txtContrasenyaRegistre"
+        android:inputType="text"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/txtRepeteixCorreu"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+    <EditText
+        android:id="@+id/txtRepeteicContrasenyaRegistre"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/txtRepeteixContrasenyaRegistre"
+        android:inputType="text"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/txtContrasenyaRegistre"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
 
     <Button
         android:id="@+id/btn_Registre"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:text="@string/Registrarse"
+
         android:backgroundTint="@color/black"
         android:textColor="@android:color/white"
         android:layout_marginTop="30dp"
-        app:layout_constraintTop_toBottomOf="@id/txt_CognomRegistre"
+        app:layout_constraintTop_toBottomOf="@id/txtRepeteicContrasenyaRegistre"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         />

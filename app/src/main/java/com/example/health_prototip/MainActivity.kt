@@ -5,10 +5,7 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 
 class MainActivity : AppCompatActivity() {
     private lateinit var btn_iniciar_sesion : Button
@@ -23,7 +20,6 @@ class MainActivity : AppCompatActivity() {
 
         initComponent()
         initListeners()
-
     }
     fun initComponent(){
         btn_iniciar_sesion = findViewById<Button>(R.id.btn_iniciar_sesion)
@@ -33,20 +29,20 @@ class MainActivity : AppCompatActivity() {
     }
     fun initListeners(){
         btn_iniciar_sesion.setOnClickListener {
-            navigateToPaginaPrincipal_loby()
+            navigateToPaginaPrincipalLoby()
         }
         txt_registrarse.setOnClickListener {
             navigateToRegister()
         }
-
     }
     fun navigateToRegister(){
         val intent = Intent(this, registreActivity::class.java)
         startActivity(intent)
     }
-    fun navigateToPaginaPrincipal_loby(){
-        val intent = Intent(this, PaginaPrincipal_loby::class.java)
+    fun navigateToPaginaPrincipalLoby(){
+        val intent = Intent(this, PaginaPrincipalLoby::class.java)
         startActivity(intent)
     }
+
 
 }
