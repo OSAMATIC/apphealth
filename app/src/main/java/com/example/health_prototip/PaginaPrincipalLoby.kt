@@ -11,3 +11,24 @@ class PaginaPrincipalLoby : AppCompatActivity() {
 
     }
 }
+
+
+
+
+/*
+progrres var codigo ejemplo gpt para cambiar color y aumentar progreso ,datos ha de recibir del layout de comida ! y guardar
+diariamente el consumo en una linea cronologica .
+
+
+val progress = findViewById<LinearProgressIndicator>(R.id.progressComida)
+progress.setProgressCompat(60, true) // animación
+val color = when (progress.progress) {
+    in 0..30 -> Color.RED
+    in 31..70 -> Color.YELLOW
+    else -> Color.GREEN
+}
+progress.setIndicatorColor(color)
+
+
+*/
+
