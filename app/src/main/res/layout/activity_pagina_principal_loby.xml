@@ -21,6 +21,7 @@
 
             <!-- CardView Comida -->
             <androidx.cardview.widget.CardView
+                android:id="@+id/Cv_comida"
                 android:layout_width="match_parent"
                 android:layout_height="120dp"
                 android:layout_marginBottom="16dp"
@@ -38,8 +39,8 @@
                         android:id="@+id/imgIconComida"
                         android:layout_width="60dp"
                         android:layout_height="60dp"
-                        android:src="@drawable/ic_comida"
-                        android:contentDescription="Icono Comida" />
+                        android:src="@drawable/ic_logo_health"
+                        android:contentDescription="@string/icono_comida" />
 
                     <LinearLayout
                         android:layout_width="wrap_content"
@@ -51,7 +52,7 @@
                             android:id="@+id/txtTituloComida"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Comida"
+                            android:text="@string/comida"
                             android:textSize="18sp"
                             android:textStyle="bold"/>
 
@@ -78,6 +79,7 @@
 
             <!-- CardView Agua -->
             <androidx.cardview.widget.CardView
+                android:id="@+id/Cv_agua"
                 android:layout_width="match_parent"
                 android:layout_height="120dp"
                 android:layout_marginBottom="16dp"
@@ -95,8 +97,8 @@
                         android:id="@+id/imgIconAgua"
                         android:layout_width="60dp"
                         android:layout_height="60dp"
-                        android:src="@drawable/ic_agua"
-                        android:contentDescription="Icono Agua" />
+                        android:src="@drawable/ic_logo_health"
+                        android:contentDescription="@string/icono_agua" />
 
                     <LinearLayout
                         android:layout_width="wrap_content"
@@ -108,7 +110,7 @@
                             android:id="@+id/txtTituloAgua"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Agua"
+                            android:text="@string/agua"
                             android:textSize="18sp"
                             android:textStyle="bold"/>
 
@@ -116,7 +118,7 @@
                             android:id="@+id/txtDescAgua"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Lleva control de tus vasos diarios"
+                            android:text="@string/lleva_control_de_tus_vasos_diarios"
                             android:textSize="14sp"
                             android:textColor="#666666"/>
                     </LinearLayout>
@@ -133,10 +135,81 @@
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
+            <!-- CardView ejercicio -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/Cv_Excercici"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:padding="16dp"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:id="@+id/excercic"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/ic_logo_health"
+                        android:contentDescription="@string/icono_excercici" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginStart="16dp">
+
+                        <TextView
+                            android:id="@+id/ExcerciciCDVW"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/Excercici"
+                            android:textSize="18sp"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:id="@+id/txtExcercici"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/a_ade_y_controla_tus_comidas"
+                            android:textSize="14sp"
+                            android:textColor="#666666"/>
+                    </LinearLayout>
+
+                    <ProgressBar
+                        android:id="@+id/progressExcercici"
+                        style="@android:style/Widget.ProgressBar.Horizontal"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:progress="50"
+                        android:max="100"
+                        android:layout_marginStart="16dp"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
             <!-- Aquí podrías añadir más CardView: Ejercicio, Composición corporal, Pasos… -->
 
         </LinearLayout>
     </androidx.core.widget.NestedScrollView>
+
+    <!-- Bottom Navigation fijo afuera del scroll -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/green_nav"
+        android:elevation="8dp"
+        app:itemIconTint="@color/black"
+        app:itemTextColor="@color/black"
+        app:menu="@menu/bottom_nav_menu"
+        android:layout_gravity="bottom"/>
 
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

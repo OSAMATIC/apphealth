@@ -14,4 +14,15 @@
     <string name="Verifica_Email">Confirma Email</string>
     <string name="txtContrasenyaRegistre">Contrasenya</string>
     <string name="txtRepeteixContrasenyaRegistre">Confirma Contrasenya</string>
+    <string name="icono_comida">Icono Comida</string>
+    <string name="comida">Comida</string>
+    <string name="icono_agua">Icono Agua</string>
+    <string name="agua">Agua</string>
+    <string name="lleva_control_de_tus_vasos_diarios">Lleva control de tus vasos diarios</string>
+    <string name="a_ade_y_controla_tus_comidas">Añade y controla tus comidas</string>
+    <string name="Excercici">Excercici</string>
+    <string name="icono_excercici">Icono_excercici_description\n</string>
+    <string name="inicio_menu_nav">Inicio</string>
+    <string name="buscar_menu_nav">Buscar</string>
+    <string name="ajustes_menu_nav">Ajustes</string>
 </resources>
